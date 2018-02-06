@@ -16,6 +16,6 @@ class String
   end
 
   def count_sentences
-    self.split.count{|text| exclamation? || question? || sentence?}
+    self.split.count{|text| text.exclamation? || text.question? || text.sentence?}
   end
 end
